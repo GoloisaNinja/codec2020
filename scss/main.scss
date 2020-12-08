@@ -2,19 +2,7 @@
 @import 'menu';
 
 * {
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: 'Manrop';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Manrope'),
-    url('/dist/css/static/Manrope-Regular.ttf') format('tff');
-}
-
-* {
-  font-family: 'Manrope';
+  font-family: 'Nunito Sans';
   box-sizing: border-box;
 }
 
@@ -24,7 +12,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   line-height: 1.5;
 }
 

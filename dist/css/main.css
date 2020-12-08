@@ -91,6 +91,7 @@
   transition-delay: 0.4s; }
 
 * {
+  font-family: 'Nunito Sans';
   box-sizing: border-box; }
 
 body {
@@ -98,7 +99,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Manrope' sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
