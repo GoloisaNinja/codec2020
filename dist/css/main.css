@@ -237,7 +237,8 @@ main {
 
 .contact-btn {
   padding: 1rem;
-  background-color: #eece1a; }
+  background-color: #eece1a;
+  font-size: 1.5rem; }
 
 .form-group {
   display: flex;
