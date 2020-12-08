@@ -150,8 +150,8 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
-    border: 3px #fff solid;
+    font-size: 1.5rem;
+    border: 2px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -176,11 +176,13 @@ main {
   flex-direction: column;
 }
 .contact-input {
-  font-size: 1rem;
-  padding: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
   background-color: lighten($primary-color, 15%);
   margin-bottom: 1rem;
+  color: #fff;
 }
+
 .contact-btn {
   padding: 1rem;
   background-color: $secondary-color;
@@ -194,11 +196,11 @@ main {
 }
 .contact-label {
   position: absolute;
-  top: -15%;
+  top: -2%;
   padding: 0.7rem 0 0 1rem;
   transition: all 250ms;
   opacity: 0.75;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 ::placeholder {
   color: white;
@@ -207,7 +209,7 @@ main {
 
 .contact-input:focus + .contact-label,
 .contact-input:valid + .contact-label {
-  font-size: 75%;
+  font-size: 85%;
   transform: translate3d(0, -100%, 0);
   opacity: 1;
 }

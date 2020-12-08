@@ -58,14 +58,15 @@
         </div>
         <div><span class="text-secondary">Phone: </span> (607) 621-1660</div>
       </div>
+      <h2 class="sm-heading">Send me your details</h2>
       <div class="form-container">
-        <form class="contact-form" onsubmit="">
+        <form name="portfolio-contact" class="contact-form" method="POST data-netlify="true">
           <div class="form-group">
             <input type="text" class="contact-input" id="name" required />
             <label class="contact-label" for="name">your name</label>
           </div>
           <div class="form-group">
-            <input type="text" class="contact-input" id="email" required />
+            <input type="email" class="contact-input" id="email" required />
             <label class="contact-label" for="name">your email</label>
           </div>
           <div class="form-group">
@@ -73,12 +74,12 @@
               cols="30"
               rows="10"
               class="contact-input"
-              placeholder="send me message..."
               id="text-box"
               required
             ></textarea>
+            <label class="contact-label" for="text-box">your message goes here...</label>
           </div>
-            <button type="button" class="contact-btn">submit</button>
+            <button type="submit" class="contact-btn">submit</button>
           </div>
         </form>
       </div>
