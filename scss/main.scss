@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Manrop';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Manrope'),
+    url('/dist/css/static/Manrope-Regular.ttf') format('tff');
+}
+
+* {
+  font-family: 'Manrope';
+  box-sizing: border-box;
+}
+
 body {
   @include background;
   background: $primary-color;
