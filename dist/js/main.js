@@ -4,19 +4,30 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
-const contactBtn = document.querySelector('.contact-btn');
+const contactForm = document.querySelector('form');
 
 // Set Initial State Of Menu
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
-if (contactBtn) {
-  contactBtn.addEventListener('click', sentForm);
+if (contactForm) {
+  contactForm.addEventListener('submit', handleSubmit);
 }
 
-function sentForm() {
-  alert('Your message has been sent');
-}
+const handleSubmit = (e) => {
+  e.preventDefault();
+  let myForm = document.getElementById('myForm');
+  let formData = new FormData(myForm);
+  fetch('/', {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log('Form success'))
+    .catch((error) => alert.error());
+};
 
 function toggleMenu() {
   if (!showMenu) {

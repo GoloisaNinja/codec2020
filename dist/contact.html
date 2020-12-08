@@ -60,13 +60,13 @@
       </div>
       <h2 class="sm-heading">Send me your details</h2>
       <div class="form-container">
-        <form name="portfolio-contact" class="contact-form" method="POST data-netlify="true">
+        <form name="portfolio-contact" id="myForm" class="contact-form" method="POST" data-netlify="true">
           <div class="form-group">
-            <input type="text" class="contact-input" id="name" required />
+            <input type="text" class="contact-input" id="name" name="name" required />
             <label class="contact-label" for="name">your name</label>
           </div>
           <div class="form-group">
-            <input type="email" class="contact-input" id="email" required />
+            <input type="email" class="contact-input" id="email" name="email" required />
             <label class="contact-label" for="name">your email</label>
           </div>
           <div class="form-group">
@@ -75,6 +75,7 @@
               rows="10"
               class="contact-input"
               id="text-box"
+              name="text-box"
               required
             ></textarea>
             <label class="contact-label" for="text-box">your message goes here...</label>
