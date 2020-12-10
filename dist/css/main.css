@@ -189,6 +189,11 @@ main {
   .about-info .job-text {
     font-weight: 300; }
 
+.sm-print {
+  font-size: 0.7rem; }
+  .sm-print-secondary {
+    color: #eece1a; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -221,15 +226,21 @@ main {
         color: #000; }
 
 .form-container {
-  max-width: 25rem;
-  margin: 0 auto; }
+  max-width: 35rem;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 2px;
+  padding: 1rem; }
+
+#c-form {
+  color: #eece1a; }
 
 .contact-form {
   display: flex;
   flex-direction: column; }
 
 .contact-input {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0.5rem;
   background-color: #6a6a6a;
   margin-bottom: 1rem;
@@ -248,11 +259,11 @@ main {
 
 .contact-label {
   position: absolute;
-  top: -2%;
+  top: 0%;
   padding: 0.7rem 0 0 1rem;
   transition: all 250ms;
   opacity: 0.75;
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
 
 ::placeholder {
   color: white;
@@ -261,7 +272,7 @@ main {
 .contact-input:focus + .contact-label,
 .contact-input:valid + .contact-label {
   font-size: 85%;
-  transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -98%, 0);
   opacity: 1; }
 
 .btn, .btn-dark, .btn-light {
