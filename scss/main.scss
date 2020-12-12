@@ -189,16 +189,20 @@ main {
 }
 .contact-input {
   font-size: 1.3rem;
-  padding: 0.5rem;
+  padding: 1rem 0 0.8rem;
   background-color: lighten($primary-color, 15%);
   margin-bottom: 1rem;
   color: #fff;
+  border: none;
+  border-bottom: 2px solid darken($primary-color, 20%);
 }
 
 .contact-btn {
-  padding: 1rem;
+  padding: 0.7rem;
   background-color: $secondary-color;
   font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px solid darken($secondary-color, 20%);
 }
 // Input Label Floating Utils
 .form-group {
@@ -209,7 +213,7 @@ main {
 }
 .contact-label {
   position: absolute;
-  top: 0%;
+  top: 0;
   padding: 0.7rem 0 0 1rem;
   transition: all 250ms;
   opacity: 0.75;

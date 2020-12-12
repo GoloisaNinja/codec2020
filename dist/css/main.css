@@ -241,15 +241,19 @@ main {
 
 .contact-input {
   font-size: 1.3rem;
-  padding: 0.5rem;
+  padding: 1rem 0 0.8rem;
   background-color: #6a6a6a;
   margin-bottom: 1rem;
-  color: #fff; }
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #111111; }
 
 .contact-btn {
-  padding: 1rem;
+  padding: 0.7rem;
   background-color: #eece1a;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px solid #97820b; }
 
 .form-group {
   display: flex;
@@ -259,7 +263,7 @@ main {
 
 .contact-label {
   position: absolute;
-  top: 0%;
+  top: 0;
   padding: 0.7rem 0 0 1rem;
   transition: all 250ms;
   opacity: 0.75;
