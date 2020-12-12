@@ -189,9 +189,11 @@ main {
 }
 .contact-input {
   font-size: 1.3rem;
-  padding: 1rem 0 0.5rem;
+  padding-left: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
   background-color: lighten($primary-color, 15%);
-  margin-top: 1.1rem;
   color: #fff;
   border: none;
   border-bottom: 2px solid darken($primary-color, 20%);
@@ -213,8 +215,21 @@ main {
 }
 .contact-label {
   position: absolute;
-  top: 0;
-  padding: 1.5rem 0 0 1rem;
+  top: 8%;
+  padding-left: 1rem;
+  transition: all 250ms;
+  opacity: 0.75;
+  font-size: 1.3rem;
+}
+::placeholder {
+  color: white;
+  opacity: 75%;
+}
+
+.text-label {
+  position: absolute;
+  top: 2%;
+  padding-left: 1rem;
   transition: all 250ms;
   opacity: 0.75;
   font-size: 1.3rem;
@@ -225,9 +240,11 @@ main {
 }
 
 .contact-input:focus + .contact-label,
-.contact-input:valid + .contact-label {
+.contact-input:valid + .contact-label,
+.contact-input:focus + .text-label,
+.contact-input:valid + .text-label {
   font-size: 85%;
-  transform: translate3d(0, -80%, 0);
+  transform: translate3d(0, -135%, 0);
   opacity: 1;
 }
 
