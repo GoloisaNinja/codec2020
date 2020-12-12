@@ -189,9 +189,9 @@ main {
 }
 .contact-input {
   font-size: 1.3rem;
-  padding: 1rem 0 0.8rem;
+  padding: 1rem 0 0.5rem;
   background-color: lighten($primary-color, 15%);
-  margin-bottom: 1rem;
+  margin-top: 1.1rem;
   color: #fff;
   border: none;
   border-bottom: 2px solid darken($primary-color, 20%);
@@ -214,7 +214,7 @@ main {
 .contact-label {
   position: absolute;
   top: 0;
-  padding: 0.7rem 0 0 1rem;
+  padding: 1.5rem 0 0 1rem;
   transition: all 250ms;
   opacity: 0.75;
   font-size: 1.3rem;
@@ -227,7 +227,7 @@ main {
 .contact-input:focus + .contact-label,
 .contact-input:valid + .contact-label {
   font-size: 85%;
-  transform: translate3d(0, -98%, 0);
+  transform: translate3d(0, -80%, 0);
   opacity: 1;
 }
 
