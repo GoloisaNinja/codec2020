@@ -141,12 +141,12 @@ main {
 }
 .projects {
 	display: grid;
-	grid-gap: 0.7rem;
+	grid-gap: 1.5rem;
 	grid-template-columns: repeat(3, 1fr);
 
 	img {
 		width: 100%;
-		border: 3px #fff solid;
+		//border: 3px #fff solid;
 
 		&:hover {
 			opacity: 0.5;
@@ -157,16 +157,21 @@ main {
 }
 .item {
 	display: flex;
+	background-color: lighten($primary-color, 5%);
 	flex-direction: column;
+	border-top: 3px $secondary-color solid;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .item-description {
-	border: 3px #fff solid;
+	background-color: lighten($primary-color, 5%);
 	display: flex;
 	flex-direction: column;
 	flex: 1;
 	&__text {
 		padding: 1rem;
 		font-size: 0.75rem;
+		flex: 1;
 	}
 }
 .emphasis-text {
@@ -289,6 +294,7 @@ main {
 	@extend .btn;
 	background: darken($primary-color, 50);
 	color: #fff;
+	margin-bottom: 0;
 }
 
 .btn-light {
