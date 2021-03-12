@@ -170,6 +170,12 @@ main {
     height: 250px;
     border-radius: 50%;
     border: #eece1a 3px solid; }
+  .about-info .tech {
+    margin-top: 1.5rem;
+    text-align: center; }
+  .about-info .tech-icon {
+    width: 75px;
+    padding: 0.5rem; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -184,7 +190,7 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: #515151;
-    padding: 0.5rem;
+    padding: 1.5rem;
     border-bottom: #eece1a 5px solid; }
   .about-info .job-text {
     font-weight: 300; }
@@ -206,6 +212,23 @@ main {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
+.item {
+  display: flex;
+  flex-direction: column; }
+
+.item-description {
+  border: 3px #fff solid;
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+  .item-description__text {
+    padding: 1rem;
+    font-size: 0.75rem; }
+
+.emphasis-text {
+  font-size: 1.25rem;
+  color: #eece1a; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -214,9 +237,8 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 1.5rem;
-    border: 2px #fff solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
@@ -227,10 +249,7 @@ main {
 
 .form-container {
   max-width: 35rem;
-  margin: 0 auto;
-  border: 2px solid white;
-  border-radius: 2px;
-  padding: 1rem; }
+  margin: 0 auto; }
 
 #c-form {
   color: #eece1a; }
@@ -247,14 +266,17 @@ main {
   margin-bottom: 1rem;
   background-color: #6a6a6a;
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: none;
-  border-bottom: 2px solid #111111; }
+  border-radius: 3px; }
 
 .contact-btn {
   padding: 0.7rem;
   background-color: #eece1a;
   font-size: 1.5rem;
   border: none;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-bottom: 2px solid #97820b; }
 
 .form-group {
@@ -354,7 +376,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }

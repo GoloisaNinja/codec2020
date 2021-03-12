@@ -31,10 +31,10 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="index.html" class="nav-link"> base </a>
+            <a href="index.html" class="nav-link"> home </a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link"> readme </a>
+            <a href="about.html" class="nav-link"> about </a>
           </li>
           <li class="nav-item">
             <a href="work.html" class="nav-link"> projects </a>
@@ -51,7 +51,7 @@
         contact
         <span class="text-secondary">me</span>
       </h1>
-      <h2 class="sm-heading">lets work together</h2>
+      <h2 class="sm-heading" style="margin-bottom: 0;">lets work together</h2>
       <div class="boxes">
         <div>
           <span class="text-secondary">Email: </span> end0flin3@icloud.com
@@ -59,7 +59,7 @@
         <div><span class="text-secondary">Phone: </span> (607) 621-1660</div>
       </div>
       <div class="form-container">
-          <h2 style="margin-bottom: 1rem; text-align: center;"   class="sm-heading"><i id="c-form" class="fas fa-envelope"></i> email me directly</h2>
+          <h2 style="margin-bottom: 2rem; text-align: center;"   class="sm-heading"><i id="c-form" class="fas fa-envelope"></i> send me a message!</h2>
         <form name="portfolio-contact" id="myForm" class="contact-form" method="POST" data-netlify="true">
           <div class="form-group">
             <input type="text" class="contact-input" id="name" name="name" required />
@@ -86,8 +86,14 @@
       </div>
     </main>
 
-    <footer id="main-footer">updated <span class="text-secondary">2020</span></footer>
+    <footer id="main-footer">Jon Collins Dev <span id="currentYear" class="text-secondary"></span></footer>
+    <script>
+      const date = new Date()
+      const currentYear = date.getFullYear()
+      const myDate = document.getElementById('currentYear')
+      myDate.innerHTML = currentYear
 
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

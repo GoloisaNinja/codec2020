@@ -1,97 +1,98 @@
 // Widescreens
 @include mediaXl {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 // Desktops & Laptops
 @include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
-  main {
-    align-items: center;
-    text-align: center;
+	main {
+		align-items: center;
+		text-align: center;
 
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
-    }
-  }
+		.lg-heading {
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+	}
 
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0;
+	ul.menu-nav,
+	div.menu-branding {
+		float: none;
+		width: 100%;
+		min-height: 0;
 
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
 
-  .menu-nav {
-    height: 70vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
+	.menu-nav {
+		height: 70vh;
+		transform: translate3d(-100%, 0, 0);
+		font-size: 24px;
+	}
 
-  .menu-branding {
-    height: 30vh;
-    transform: translate3d(100%, 0, 0);
+	.menu-branding {
+		height: 30vh;
+		transform: translate3d(100%, 0, 0);
 
-    .portrait {
-      background: url('../img/really_small_portrait.jpg');
-      width: 150px;
-      height: 150px;
-    }
-  }
+		.portrait {
+			background: url('../img/really_small_portrait.jpg');
+			width: 150px;
+			height: 150px;
+		}
+	}
 
-  .about-info {
-    grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
+	.about-info {
+		grid-template-areas:
+			'bioimage'
+			'bio'
+			'job1'
+			'job2'
+			'job3'
+			'job4';
 
-    grid-template-columns: 1fr;
-  }
+		grid-template-columns: 1fr;
+	}
 
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 // Smartphones
 @include mediaSm {
-  main {
-    padding: 2rem;
-    #home h1 {
-      margin-top: 10vh;
-    }
+	main {
+		padding: 2rem;
+		#home h1 {
+			margin-top: 10vh;
+		}
 
-    .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem;
-    }
-  }
+		.lg-heading {
+			margin-top: 1rem;
+			font-size: 5rem;
+		}
+	}
 
-  .projects {
-    grid-template-columns: 1fr;
-  }
+	.projects {
+		grid-template-columns: 1fr;
+	}
 }
 @media screen and (max-height: 425px) {
-  .menu-branding {
-    display: none;
-  }
-  .menu-nav {
-    height: 100vh;
-    width: 100%;
-  }
+	.menu-branding {
+		display: none;
+	}
+	.menu-nav {
+		height: 100vh;
+		width: 100%;
+	}
 }
