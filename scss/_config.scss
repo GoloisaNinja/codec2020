@@ -12,8 +12,9 @@ $background-opacity: 0.95;
 	@if $show-home-image {
 		&#bg-img {
 			background: $home-image;
-			background-attachment: fixed;
-			background-size: cover;
+			background-attachment: local;
+			background-size: auto;
+			background-repeat: no-repeat;
 
 			&:after {
 				content: '';

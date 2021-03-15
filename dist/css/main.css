@@ -104,8 +104,9 @@ body {
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
+    background-attachment: local;
+    background-size: auto;
+    background-repeat: no-repeat; }
     body#bg-img:after {
       content: '';
       position: fixed;
