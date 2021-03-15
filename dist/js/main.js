@@ -21,7 +21,9 @@ let showMenu = false;
 // Menu scrollToView
 
 const myScrollFunc = (el, toggle) => {
-	el.scrollIntoView({ behavior: 'smooth' });
+	seamless.elementScrollIntoView(el, {
+		behavior: 'smooth',
+	});
 	if (toggle) {
 		toggleMenu();
 	}
