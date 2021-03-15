@@ -8,27 +8,27 @@ $background-opacity: 0.95;
 	transition: all 0.5s ease-out;
 }
 
-@mixin background {
-	@if $show-home-image {
-		&#bg-img {
-			background: $home-image;
-			background-attachment: local;
-			background-size: auto;
-			background-repeat: no-repeat;
+// @mixin background {
+// 	@if $show-home-image {
+// 		&#bg-img {
+// 			background: $home-image;
+// 			background-attachment: local;
+// 			background-size: auto;
+// 			background-repeat: no-repeat;
 
-			&:after {
-				content: '';
-				position: fixed;
-				top: 0;
-				right: 0;
-				width: 100%;
-				height: 100%;
-				z-index: -1;
-				background: rgba($primary-color, $background-opacity);
-			}
-		}
-	}
-}
+// 			&:after {
+// 				content: '';
+// 				position: fixed;
+// 				top: 0;
+// 				right: 0;
+// 				width: 100%;
+// 				height: 100%;
+// 				z-index: -1;
+// 				background: rgba($primary-color, $background-opacity);
+// 			}
+// 		}
+// 	}
+// }
 
 // Set Text Color
 @function set-text-color($color) {

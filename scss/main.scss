@@ -7,7 +7,7 @@
 }
 
 body {
-	@include background;
+	//@include background;
 	background: $primary-color;
 	color: set-text-color($primary-color);
 	height: 100%;
@@ -48,11 +48,23 @@ header {
 .text-secondary {
 	color: $secondary-color;
 }
-
+.linear-bg {
+	background-image: linear-gradient(
+			rgba(63, 63, 63, 0.9),
+			rgba(63, 63, 63, 0.9)
+		),
+		$home-image;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	height: 87vh;
+	min-height: 90vh;
 }
 .arrow-down {
 	display: flex;
@@ -161,6 +173,7 @@ main {
 		background: lighten($primary-color, 5);
 		padding: 1.5rem;
 		border-bottom: $secondary-color 5px solid;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	}
 	.job-text {
 		font-weight: 300;
