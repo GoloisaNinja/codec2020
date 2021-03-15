@@ -30,7 +30,7 @@ h3 {
 	&.sm-heading {
 		margin-bottom: 2rem;
 		padding: 0.2rem 1rem;
-		background: rgba(lighten($primary-color, 2), 0.5);
+		background: rgba(lighten($primary-color, 4), 0.8);
 	}
 }
 
@@ -49,13 +49,48 @@ header {
 	color: $secondary-color;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 87vh;
+}
+.arrow-down {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 3rem;
+}
+
+.arrow-btn {
+	background: none;
+	border: none;
+	font-size: 3rem;
+	color: #fff;
+	animation-name: pulse;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	cursor: pointer;
+	outline: none;
+}
+
+@keyframes pulse {
+	0% {
+		color: #fff;
+	}
+	100% {
+		color: $secondary-color;
+	}
+}
+
 main {
 	padding: 4rem;
 	// height: 100%;
-	min-height: calc(100vh - 60px);
+	min-height: calc(100vh - 30px);
 
 	.icons {
-		margin-top: 1rem;
+		margin-top: 0.1rem;
 
 		a {
 			padding: 0.4rem;
@@ -222,7 +257,9 @@ main {
 	margin-bottom: 1rem;
 	background-color: lighten($primary-color, 15%);
 	color: #fff;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+		rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+		rgba(0, 0, 0, 0.09) 0px 32px 16px;
 	border: none;
 	border-radius: 3px;
 }
@@ -233,7 +270,9 @@ main {
 	font-size: 1.5rem;
 	border: none;
 	border-radius: 3px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+		rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+		rgba(0, 0, 0, 0.09) 0px 32px 16px;
 	border-bottom: 2px solid darken($secondary-color, 20%);
 }
 // Input Label Floating Utils
