@@ -49,17 +49,38 @@ header {
 	color: $secondary-color;
 }
 .linear-bg {
+	position: relative;
+	// background-image: linear-gradient(
+	// 		rgba(63, 63, 63, 0.9),
+	// 		rgba(63, 63, 63, 0.9)
+	// 	),
+	// 	$home-image;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// width: 100%;
+	// min-height: 100vh;
+	// background-attachment: fixed;
+	// background-position: center;
+}
+.linear-bg::before {
+	content: '';
 	background-image: linear-gradient(
 			rgba(63, 63, 63, 0.9),
 			rgba(63, 63, 63, 0.9)
 		),
 		$home-image;
+	position: fixed;
+	top: 0;
+	z-index: -1;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
-	min-height: 100vh;
-	background-attachment: fixed;
 	background-position: center;
+	height: 100vh;
+	width: 100vw;
+}
+#about,
+#contact {
+	background-color: $primary-color;
 }
 .wrapper {
 	display: flex;

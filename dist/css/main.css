@@ -132,13 +132,23 @@ header {
   color: #eece1a; }
 
 .linear-bg {
+  position: relative; }
+
+.linear-bg::before {
+  content: '';
   background-image: linear-gradient(rgba(63, 63, 63, 0.9), rgba(63, 63, 63, 0.9)), url(../img/background.jpg);
+  position: fixed;
+  top: 0;
+  z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  height: 100vh;
+  width: 100vw; }
+
+#about,
+#contact {
+  background-color: #444; }
 
 .wrapper {
   display: flex;
