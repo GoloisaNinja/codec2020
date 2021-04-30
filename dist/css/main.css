@@ -69,10 +69,8 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background-image: linear-gradient(to left, rgba(245, 252, 247, 0.151), rgba(2, 238, 81, 0.158)), url("../img/small_port.jpg");
+      background-image: linear-gradient(to bottom, rgba(245, 252, 247, 0.1), rgba(2, 238, 81, 0.4)), url("../img/small_port.jpg");
       background-size: cover;
-      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
-      clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
       border-bottom: 3px solid #00de51; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -251,7 +249,7 @@ main {
   .about-info .pic {
     grid-area: bioimage;
     margin: auto;
-    background-image: linear-gradient(to left, rgba(245, 252, 247, 0.151), rgba(2, 238, 81, 0.158)), url("../img/portrait.jpg");
+    background-image: linear-gradient(to bottom, rgba(245, 252, 247, 0.1), rgba(2, 238, 81, 0.4)), url("../img/portrait.jpg");
     width: 250px;
     height: 250px;
     background-size: cover;

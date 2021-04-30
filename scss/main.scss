@@ -196,9 +196,9 @@ main {
 		grid-area: bioimage;
 		margin: auto;
 		background-image: linear-gradient(
-				to left,
-				rgba(245, 252, 247, 0.151),
-				rgba(2, 238, 81, 0.158)
+				to bottom,
+				rgba(245, 252, 247, 0.1),
+				rgba(2, 238, 81, 0.4)
 			),
 			url('../img/portrait.jpg');
 		width: 250px;
