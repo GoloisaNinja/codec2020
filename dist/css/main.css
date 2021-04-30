@@ -69,16 +69,18 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/small_portrait.jpg");
-      border-radius: 50%;
-      border: solid 3px #eece1a; }
+      background-image: linear-gradient(to left, rgba(245, 252, 247, 0.151), rgba(2, 238, 81, 0.158)), url("../img/small_port.jpg");
+      background-size: cover;
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+      clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+      border-bottom: 3px solid #00de51; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #00de51; }
   .menu .nav-link {
     display: inline-block;
     cursor: pointer;
@@ -91,7 +93,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #00de51; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -140,7 +142,7 @@ h3 {
   animation: typing 3s steps(34, end), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #eece1a; }
+  border-right: 2px solid #00de51; }
 
 @keyframes typing {
   from {
@@ -160,7 +162,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #00de51; }
 
 .linear-bg {
   position: relative; }
@@ -224,7 +226,7 @@ header {
   0% {
     color: #fff; }
   100% {
-    color: #eece1a; } }
+    color: #00de51; } }
 
 main {
   padding: 4rem;
@@ -235,7 +237,7 @@ main {
       padding: 0.4rem;
       transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #eece1a; }
+        color: #00de51; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -246,13 +248,16 @@ main {
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio' 'bioimage bio' 'job1 job2' 'job3 job4';
   grid-template-columns: repeat(2, 1fr); }
-  .about-info .bio-image {
+  .about-info .pic {
     grid-area: bioimage;
     margin: auto;
+    background-image: linear-gradient(to left, rgba(245, 252, 247, 0.151), rgba(2, 238, 81, 0.158)), url("../img/portrait.jpg");
     width: 250px;
     height: 250px;
-    border-radius: 50%;
-    border: #eece1a 3px solid; }
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    border-bottom: 3px solid #00de51; }
   .about-info .tech {
     margin-top: 1.5rem;
     text-align: center; }
@@ -274,7 +279,7 @@ main {
   .about-info .job {
     background: #333333;
     padding: 1.5rem;
-    border-bottom: #eece1a 5px solid;
+    border-bottom: #00de51 5px solid;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
   .about-info .job-text {
     font-weight: 300; }
@@ -282,7 +287,7 @@ main {
 .sm-print {
   font-size: 0.7rem; }
   .sm-print-secondary {
-    color: #eece1a; }
+    color: #00de51; }
 
 .projects {
   display: grid;
@@ -292,14 +297,14 @@ main {
     width: 100%; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #00de51;
       transition: all 0.5s ease-out; }
 
 .item {
   display: flex;
   background-color: #333333;
   flex-direction: column;
-  border-top: 3px #eece1a solid;
+  border-top: 3px #00de51 solid;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 .item-description {
@@ -314,7 +319,7 @@ main {
 
 .emphasis-text {
   font-size: 1.25rem;
-  color: #eece1a; }
+  color: #00de51; }
 
 .boxes {
   display: flex;
@@ -329,7 +334,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #00de51;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -339,7 +344,7 @@ main {
   margin: 0 auto; }
 
 #c-form {
-  color: #eece1a; }
+  color: #00de51; }
 
 .contact-form {
   display: flex;
@@ -359,15 +364,15 @@ main {
 
 .contact-btn {
   padding: 0.7rem;
-  background-color: #eece1a;
+  background-color: #00de51;
   font-size: 1.5rem;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  border-bottom: 2px solid #97820b; }
+  border-bottom: 2px solid #00782c; }
   .contact-btn:hover {
-    background-color: #f2d849; }
+    background-color: #12ff68; }
 
 .form-group {
   display: flex;
@@ -413,7 +418,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #00de51;
     color: #000; }
 
 .btn-dark {
@@ -456,16 +461,12 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 70vh;
+    height: 100vh;
+    width: 100%;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 30vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/really_small_portrait.jpg");
-      width: 150px;
-      height: 150px; }
+    display: none; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
