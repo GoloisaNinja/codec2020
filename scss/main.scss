@@ -30,10 +30,30 @@ h3 {
 	&.sm-heading {
 		margin-bottom: 2rem;
 		padding: 0.2rem 1rem;
-		background: rgba(lighten($primary-color, 4), 0.8);
+		//background: rgba(lighten($primary-color, 2), 0.8);
 	}
 }
+.typing-div {
+	display: flex;
+}
+.sm-heading.typing {
+	width: 30rem;
+	animation: typing 3s steps(34, end), blink 0.5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid $secondary-color;
+}
 
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
 a {
 	color: #fff;
 	text-decoration: none;
@@ -65,8 +85,8 @@ header {
 .linear-bg::before {
 	content: '';
 	background-image: linear-gradient(
-			rgba(63, 63, 63, 0.9),
-			rgba(63, 63, 63, 0.9)
+			rgba(38, 38, 38, 0.9),
+			rgba(38, 38, 38, 0.9)
 		),
 		$home-image;
 	position: fixed;
@@ -78,6 +98,26 @@ header {
 	height: 100vh;
 	width: 100vw;
 }
+.linear-bg.change {
+	position: relative;
+}
+.linear-bg.change::before {
+	content: '';
+	background-image: linear-gradient(
+			rgba(38, 38, 38, 0.9),
+			rgba(38, 38, 38, 0.9)
+		),
+		$work-image;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+}
+
 #about,
 #contact {
 	background-color: $primary-color;
@@ -306,10 +346,14 @@ main {
 	font-size: 1.5rem;
 	border: none;
 	border-radius: 3px;
+	cursor: pointer;
 	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
 		rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
 		rgba(0, 0, 0, 0.09) 0px 32px 16px;
 	border-bottom: 2px solid darken($secondary-color, 20%);
+	&:hover {
+		background-color: lighten($secondary-color, 10%);
+	}
 }
 // Input Label Floating Utils
 .form-group {

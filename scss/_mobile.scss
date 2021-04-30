@@ -67,6 +67,10 @@
 	.projects {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.typing-div {
+		justify-content: center;
+		text-align: center;
+	}
 }
 
 // Smartphones
@@ -85,6 +89,16 @@
 
 	.projects {
 		grid-template-columns: 1fr;
+	}
+	.typing-div {
+		justify-content: center;
+		text-align: center;
+	}
+	.sm-heading.typing {
+		font-size: 1.25rem;
+	}
+	.hide-sm {
+		display: none;
 	}
 }
 @media screen and (max-height: 425px) {

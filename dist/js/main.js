@@ -18,6 +18,21 @@ const sectionContact = document.getElementById('contact');
 // Set Initial State Of Menu
 let showMenu = false;
 
+// Set BG Image based on scroll position
+const bgDiv = document.getElementById('linear-bg');
+window.onscroll = () => {
+	backgroundChange();
+};
+backgroundChange = () => {
+	if (
+		document.body.scrollTop > 1000 ||
+		document.documentElement.scrollTop > 1000
+	) {
+		bgDiv.classList.add('change');
+	} else {
+		bgDiv.classList.remove('change');
+	}
+};
 // Menu scrollToView
 
 const myScrollFunc = (el, toggle) => {

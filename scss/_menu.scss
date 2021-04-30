@@ -6,6 +6,9 @@
 	top: 35px;
 	cursor: pointer;
 	@include easeOut;
+	animation-name: fadeDown;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
 
 	.btn-line {
 		width: 28px;
@@ -35,6 +38,20 @@
 				transform: rotate(-45deg) translate(7px, -6px);
 			}
 		}
+	}
+}
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-0.5rem);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateY(0.5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 

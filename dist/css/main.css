@@ -4,7 +4,10 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  animation-name: fadeDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
@@ -19,6 +22,17 @@
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.5rem); }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .menu {
   position: fixed;
@@ -40,14 +54,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #191919;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #262626;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -96,7 +110,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #262626;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -116,8 +130,25 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(78, 78, 78, 0.8); }
+    padding: 0.2rem 1rem; }
+
+.typing-div {
+  display: flex; }
+
+.sm-heading.typing {
+  width: 30rem;
+  animation: typing 3s steps(34, end), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #eece1a; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
 
 a {
   color: #fff;
@@ -136,7 +167,22 @@ header {
 
 .linear-bg::before {
   content: '';
-  background-image: linear-gradient(rgba(63, 63, 63, 0.9), rgba(63, 63, 63, 0.9)), url(../img/background.jpg);
+  background-image: linear-gradient(rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.9)), url(../img/background.jpg);
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw; }
+
+.linear-bg.change {
+  position: relative; }
+
+.linear-bg.change::before {
+  content: '';
+  background-image: linear-gradient(rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.9)), url(../img/budapest.jpg);
   position: fixed;
   top: 0;
   z-index: -1;
@@ -148,7 +194,7 @@ header {
 
 #about,
 #contact {
-  background-color: #444; }
+  background-color: #262626; }
 
 .wrapper {
   display: flex;
@@ -226,7 +272,7 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #333333;
     padding: 1.5rem;
     border-bottom: #eece1a 5px solid;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
@@ -251,13 +297,13 @@ main {
 
 .item {
   display: flex;
-  background-color: #515151;
+  background-color: #333333;
   flex-direction: column;
   border-top: 3px #eece1a solid;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
 .item-description {
-  background-color: #515151;
+  background-color: #333333;
   display: flex;
   flex-direction: column;
   flex: 1; }
@@ -305,7 +351,7 @@ main {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   margin-bottom: 1rem;
-  background-color: #6a6a6a;
+  background-color: #4c4c4c;
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border: none;
@@ -317,8 +363,11 @@ main {
   font-size: 1.5rem;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border-bottom: 2px solid #97820b; }
+  .contact-btn:hover {
+    background-color: #f2d849; }
 
 .form-group {
   display: flex;
@@ -373,13 +422,13 @@ main {
   margin-bottom: 0; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #a6a6a6;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #0d0d0d;
   color: #fff;
   height: 60px; }
 
@@ -421,7 +470,10 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .typing-div {
+    justify-content: center;
+    text-align: center; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -432,7 +484,14 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .typing-div {
+    justify-content: center;
+    text-align: center; }
+  .sm-heading.typing {
+    font-size: 1.25rem; }
+  .hide-sm {
+    display: none; } }
 
 @media screen and (max-height: 425px) {
   .menu-branding {
