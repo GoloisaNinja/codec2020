@@ -187,8 +187,8 @@ main {
 	display: grid;
 	grid-gap: 30px;
 	grid-template-areas:
-		'bioimage bio'
-		'bioimage bio'
+		'bioimage bioimage'
+		'bio bio'
 		'job1 job2'
 		'job3 job4';
 	grid-template-columns: repeat(2, 1fr);
@@ -231,6 +231,7 @@ main {
 	.bio {
 		grid-area: bio;
 		font-size: 1.5rem;
+		text-align: left;
 	}
 	.bio-text {
 		font-weight: 200;
@@ -252,8 +253,11 @@ main {
 	.job {
 		background: lighten($primary-color, 5);
 		padding: 1.5rem;
+		-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
 		border-bottom: $secondary-color 5px solid;
 		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		text-align: left;
 	}
 	.job-text {
 		font-weight: 300;
@@ -296,6 +300,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+	text-align: left;
 	&__text {
 		padding: 1rem;
 		font-size: 0.75rem;
@@ -420,6 +425,7 @@ main {
 	padding: 0.5rem 1rem;
 	border: 0;
 	margin-bottom: 0.3rem;
+	text-align: center;
 	&:hover {
 		background: $secondary-color;
 		color: set-text-color($secondary-color);

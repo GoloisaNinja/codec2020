@@ -9,6 +9,8 @@
 	animation-name: fadeDown;
 	animation-duration: 1s;
 	animation-timing-function: ease-in;
+	animation-delay: 3s;
+	animation-fill-mode: backwards;
 
 	.btn-line {
 		width: 28px;
