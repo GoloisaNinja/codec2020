@@ -141,6 +141,10 @@ h3 {
 .typing-div {
   display: flex; }
 
+.type-font {
+  font-family: 'VT323', monospace;
+  font-size: 2.3rem; }
+
 .sm-heading.typing {
   width: 30rem;
   animation: typing 3s steps(34, end), blink 0.5s step-end infinite alternate;
@@ -505,7 +509,7 @@ main {
     justify-content: center;
     text-align: center; }
   .sm-heading.typing {
-    font-size: 1.25rem; }
+    font-size: 2.3rem; }
   .hide-sm {
     display: none; } }
 
