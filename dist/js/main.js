@@ -18,6 +18,19 @@ const sectionContact = document.getElementById('contact');
 const factHeading = document.getElementById('fact-heading');
 const factText = document.getElementById('fact-text');
 
+// Form inputs
+const formName = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('text-box');
+
+// Modal Stuff
+const modalWrapper = document.getElementById('modalWrapper');
+const modalDismiss = document.getElementById('modalDismiss');
+
+const handleDismiss = () => {
+	modalWrapper.classList.add('noShow');
+};
+
 // Set Initial State Of Menu
 let showMenu = false;
 
@@ -108,10 +121,22 @@ menuContact.addEventListener('click', () => {
 	myScrollFunc(sectionContact, true);
 });
 
+modalDismiss.addEventListener('click', () => {
+	handleDismiss();
+});
+
+const afterSubmit = () => {
+	modalWrapper.classList.remove('noShow');
+	formName.value = '';
+	email.value = '';
+	message.value = '';
+};
+
 const handleSubmit = (e) => {
 	e.preventDefault();
 	let myForm = document.getElementById('myForm');
 	let formData = new FormData(myForm);
+	console.log(formData);
 	fetch('/', {
 		method: 'POST',
 		headers: {
@@ -119,8 +144,12 @@ const handleSubmit = (e) => {
 		},
 		body: new URLSearchParams(formData).toString(),
 	})
-		.then(() => console.log('Form success'))
-		.catch((error) => alert.error());
+		.then(() => afterSubmit())
+		.catch((error) => {
+			alert(
+				'Whoops - something really unexpected happened here...try again later please'
+			);
+		});
 };
 
 menuBtn.addEventListener('click', toggleMenu);
