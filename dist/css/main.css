@@ -507,11 +507,15 @@ main {
   color: #333; }
 
 #main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1rem;
   background: #0d0d0d;
   color: #fff;
-  height: 60px; }
+  height: 70px; }
 
 @media screen and (min-width: 1171px) {
   .projects {

@@ -451,11 +451,15 @@ main {
 }
 
 #main-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	padding: 1rem;
 	background: darken($primary-color, 10);
 	color: set-text-color($primary-color);
-	height: 60px;
+	height: 70px;
 }
 
 @import 'mobile';
