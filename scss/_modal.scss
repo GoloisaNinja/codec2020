@@ -9,7 +9,7 @@
 	width: 300px;
 	max-width: 90%;
 	z-index: 1010;
-	background-color: #eee;
+	background-color: lighten($primary-color, 15%);
 	padding: 1.5rem;
 	border-radius: 3px;
 	display: flex;
@@ -47,12 +47,17 @@
 }
 .modalDismissButton1 {
 	@extend .modalButton1;
-	background-color: #0e1013;
-	border-bottom: darken(#0e1013, 5%);
+	//background-color: #0e1013;
+	background-color: $secondary-color;
+	//border-bottom: darken(#0e1013, 5%);
+	border-bottom: darken($secondary-color, 5%);
 	width: 100px;
+	color: #333;
 	&:hover {
-		background-color: lighten(#0e1013, 20%);
-		border-bottom: #0e1013;
+		//background-color: lighten(#0e1013, 20%);
+		//border-bottom: #0e1013;
+		background-color: lighten($secondary-color, 10%);
+		border-bottom: $secondary-color;
 	}
 }
 .buttonDiv {

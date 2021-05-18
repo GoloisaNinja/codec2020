@@ -149,6 +149,7 @@ const handleSubmit = (e) => {
 			alert(
 				'Whoops - something really unexpected happened here...try again later please'
 			);
+			afterSubmit();
 		});
 };
 

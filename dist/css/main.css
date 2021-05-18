@@ -9,7 +9,7 @@
   width: 300px;
   max-width: 90%;
   z-index: 1010;
-  background-color: #eee;
+  background-color: #4c4c4c;
   padding: 1.5rem;
   border-radius: 3px;
   display: flex;
@@ -45,12 +45,13 @@
     border-bottom: 2px solid #ff0a0a; }
 
 .modalDismissButton1 {
-  background-color: #0e1013;
-  border-bottom: #030404;
-  width: 100px; }
+  background-color: #00de51;
+  border-bottom: #00c548;
+  width: 100px;
+  color: #333; }
   .modalDismissButton1:hover {
-    background-color: #39414e;
-    border-bottom: #0e1013; }
+    background-color: #12ff68;
+    border-bottom: #00de51; }
 
 .buttonDiv {
   display: flex;
@@ -254,7 +255,7 @@ header {
 
 .linear-bg.change::before {
   content: '';
-  background-image: linear-gradient(rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.9)), url(../img/budapest.jpg);
+  background-image: linear-gradient(rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.9)), url(../img/robotBg.jpg);
   position: fixed;
   top: 0;
   z-index: -1;

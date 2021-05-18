@@ -256,7 +256,7 @@ main {
 	}
 
 	.job {
-		background: lighten($primary-color, 5);
+		background: lighten($primary-color, 5%);
 		padding: 1.5rem;
 		-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
 		clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
