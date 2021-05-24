@@ -5,7 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=VT323&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" href="css/main.css" />
 		<title>Jon Collins Dev Site</title>
@@ -22,9 +25,8 @@
 			<nav class="menu">
 				<div class="menu-branding">
 					<div class="portrait">
-						<h2 class="fact-heading" id="fact-heading"></h4>
-						<p class="fact-text" id="fact-text">
-						</p>
+						<h2 class="fact-heading" id="fact-heading"></h2>
+						<p class="fact-text" id="fact-text"></p>
 					</div>
 				</div>
 				<ul class="menu-nav">
@@ -186,6 +188,37 @@
 					>
 				</h2>
 				<div class="projects">
+					<div class="item">
+						<a href="https://wizardly-banach-d5eea6.netlify.app/">
+							<img src="img/projects/hatAttack.png" alt="Shopify shop" />
+						</a>
+						<div class="item-description">
+							<p class="item-description__text">
+								<span class="emphasis-text">Hat Attack </span>is a Shopify build
+								that utilizes React, Gatsby, Styled Components, and the Shopify
+								API to create a store front for the fictional company Hat
+								Attack. As my first dive into both Shopify and Gatsby, I
+								followed a course by UK Developer Tom Phillips, but tried to
+								make it my own by introducing better (in my opinion) cart logic,
+								and a number of UX enhancements for users on small screens, such
+								as a dynamic modal component and a cart item quantity indicator.
+								I also designed the custom Hat Attack icon and a specialized
+								footer component.
+							</p>
+							<a
+								href="https://wizardly-banach-d5eea6.netlify.app/"
+								class="btn-light"
+							>
+								<i class="fas fa-eye"></i> Hat Attack
+							</a>
+							<a
+								href="https://github.com/GoloisaNinja/hatAttack"
+								class="btn-dark"
+							>
+								<i class="fab fa-github"></i> Github
+							</a>
+						</div>
+					</div>
 					<div class="item">
 						<a href="https://www.wewatch.pw">
 							<img src="img/projects/MoviePartners.png" alt="Movie Partners" />
@@ -503,29 +536,42 @@
 				</form>
 			</div>
 			<div class="noShow modal-wrapper" id="modalWrapper">
-			<div class="modalStyle">
-				<div>
-					<img class='modal-icon' src="img/feelings.png" alt='feeling-robot' />
-				</div>
+				<div class="modalStyle">
+					<div>
+						<img
+							class="modal-icon"
+							src="img/feelings.png"
+							alt="feeling-robot"
+						/>
+					</div>
 
-				<h2 style="margin-bottom: .5rem; color: #eee;">Message <span class="text-secondary">Sent!</span></h2>
-				<p style="margin-bottom: 2rem; color: #eee;">Really feeling the love! Thank you for reaching out! I'll be in touch!</p>
-				<div class='buttonDiv'>
-							<button
-								class='modalDismissButton1'
-								id="modalDismiss"
-								type="button">
-								dismiss
-							</button>
+					<h2 style="margin-bottom: 0.5rem; color: #eee">
+						Message <span class="text-secondary">Sent!</span>
+					</h2>
+					<p style="margin-bottom: 2rem; color: #eee">
+						Really feeling the love! Thank you for reaching out! I'll be in
+						touch!
+					</p>
+					<div class="buttonDiv">
+						<button class="modalDismissButton1" id="modalDismiss" type="button">
+							dismiss
+						</button>
+					</div>
 				</div>
-			</div>
-			<div class='modalOverlay'></div>
-			</div>
+				<div class="modalOverlay"></div>
 			</div>
 		</main>
 		<footer id="main-footer">
-			<p style="margin-bottom: 0;">Made with <i class="fas fa-heart" style="color: #00de51;"></i> by Jon Collins <span id="currentYear" class="text-secondary"></span></p>
-			<p style="font-size: .75rem; margin-top: 0;">Modal Icon by <a href="https://www.freepik.com"><span class="text-secondary">Freepik</span></a></p>
+			<p style="margin-bottom: 0">
+				Made with <i class="fas fa-heart" style="color: #00de51"></i> by Jon
+				Collins <span id="currentYear" class="text-secondary"></span>
+			</p>
+			<p style="font-size: 0.75rem; margin-top: 0">
+				Modal Icon by
+				<a href="https://www.freepik.com"
+					><span class="text-secondary">Freepik</span></a
+				>
+			</p>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@1.0.0/dist/es5/seamless.js"></script>
 		<script src="js/main.js"></script>
