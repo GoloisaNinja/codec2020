@@ -159,6 +159,8 @@
     color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
+    .menu .nav-link a:hover {
+      color: #00de51; }
     .menu .nav-link:hover {
       color: #00de51; }
 
@@ -173,6 +175,9 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
 
 * {
   font-family: 'Nunito Sans';

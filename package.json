@@ -1,16 +1,16 @@
 {
-  "name": "portfolio-site",
-  "version": "1.0.0",
-  "description": "Professional Portfolio Site",
-  "main": "index.js",
-  "scripts": {
-    "test": "dev",
-    "compile:sass": "node-sass -w scss/ -o dist/css --recursive"
-  },
-  "author": "Jack Collins",
-  "license": "MIT",
-  "dependencies": {
-    "node-sass": "^5.0.0",
-    "seamless-scroll-polyfill": "^1.2.3"
-  }
+	"name": "portfolio-site",
+	"version": "1.0.0",
+	"description": "Professional Portfolio Site",
+	"main": "index.js",
+	"scripts": {
+		"test": "dev",
+		"compile:sass": "node-sass -w scss/ -o dist/css --recursive"
+	},
+	"author": "Jack Collins",
+	"license": "MIT",
+	"dependencies": {
+		"node-sass": "^6.0.0",
+		"seamless-scroll-polyfill": "^1.2.3"
+	}
 }
