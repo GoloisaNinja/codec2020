@@ -128,3 +128,14 @@
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 370px) {
+	.hide-super {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	.hide-md {
+		display: none;
+	}
+}
